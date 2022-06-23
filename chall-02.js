@@ -9,10 +9,6 @@
 //      }
 //  console.log(sumW([10,100,1000]));
  
- let j = [1, 2]
-
- let total = 0
-
  //Function way
  function myFunc (arr){
     let add = (a, b) => a + b;
@@ -23,7 +19,7 @@
  
 
 //Shorthand
-function myFunction( arr ) {
+function myFunction(arr) {
 return arr.reduce((acc, cur) => acc + cur, 0) / arr.length
 }
 
@@ -48,7 +44,9 @@ let func4 = arr =>{
       return b.length - a.length //we need get item's length, then sort it
    })[0]
 } 
-//Shorthand : return arr.reduce((a, b) => a.length <= b.length ? b : a)
+//Shorthand 
+//return arr.reduce((a, b) => a.length <= b.length ? b : a)
+
 console.log(func4(['help', 'me']));
 console.log(func4(['I', 'need', 'candy']));
 
